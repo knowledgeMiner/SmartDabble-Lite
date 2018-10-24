@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEEF9C032180FF7D007EA197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C022180FF7D007EA197 /* AppDelegate.swift */; };
+		EEEF9C052180FF7D007EA197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C042180FF7D007EA197 /* ViewController.swift */; };
+		EEEF9C082180FF7D007EA197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEF9C062180FF7D007EA197 /* Main.storyboard */; };
+		EEEF9C0B2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */; };
+		EEEF9C0D2180FF80007EA197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEF9C0C2180FF80007EA197 /* Assets.xcassets */; };
+		EEEF9C102180FF80007EA197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEF9C0E2180FF80007EA197 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EEEF9BFF2180FF7D007EA197 /* SmartDabble Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartDabble Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEF9C022180FF7D007EA197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEEF9C042180FF7D007EA197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEEF9C072180FF7D007EA197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEEF9C0A2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartDabble_Lite.xcdatamodel; sourceTree = "<group>"; };
+		EEEF9C0C2180FF80007EA197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEEF9C0F2180FF80007EA197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEEF9C112180FF80007EA197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEEF9BFC2180FF7D007EA197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEEF9BF62180FF7D007EA197 = {
+			isa = PBXGroup;
+			children = (
+				EEEF9C012180FF7D007EA197 /* SmartDabble Lite */,
+				EEEF9C002180FF7D007EA197 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEEF9C002180FF7D007EA197 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF9BFF2180FF7D007EA197 /* SmartDabble Lite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEEF9C012180FF7D007EA197 /* SmartDabble Lite */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF9C022180FF7D007EA197 /* AppDelegate.swift */,
+				EEEF9C042180FF7D007EA197 /* ViewController.swift */,
+				EEEF9C062180FF7D007EA197 /* Main.storyboard */,
+				EEEF9C0C2180FF80007EA197 /* Assets.xcassets */,
+				EEEF9C0E2180FF80007EA197 /* LaunchScreen.storyboard */,
+				EEEF9C112180FF80007EA197 /* Info.plist */,
+				EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */,
+			);
+			path = "SmartDabble Lite";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEEF9BFE2180FF7D007EA197 /* SmartDabble Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEEF9C142180FF80007EA197 /* Build configuration list for PBXNativeTarget "SmartDabble Lite" */;
+			buildPhases = (
+				EEEF9BFB2180FF7D007EA197 /* Sources */,
+				EEEF9BFC2180FF7D007EA197 /* Frameworks */,
+				EEEF9BFD2180FF7D007EA197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartDabble Lite";
+			productName = "SmartDabble Lite";
+			productReference = EEEF9BFF2180FF7D007EA197 /* SmartDabble Lite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEEF9BF72180FF7D007EA197 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Mamajonov Elbek";
+				TargetAttributes = {
+					EEEF9BFE2180FF7D007EA197 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = EEEF9BFA2180FF7D007EA197 /* Build configuration list for PBXProject "SmartDabble Lite" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEEF9BF62180FF7D007EA197;
+			productRefGroup = EEEF9C002180FF7D007EA197 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEEF9BFE2180FF7D007EA197 /* SmartDabble Lite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEEF9BFD2180FF7D007EA197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEEF9C102180FF80007EA197 /* LaunchScreen.storyboard in Resources */,
+				EEEF9C0D2180FF80007EA197 /* Assets.xcassets in Resources */,
+				EEEF9C082180FF7D007EA197 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEEF9BFB2180FF7D007EA197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEEF9C052180FF7D007EA197 /* ViewController.swift in Sources */,
+				EEEF9C0B2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld in Sources */,
+				EEEF9C032180FF7D007EA197 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEEF9C062180FF7D007EA197 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEEF9C072180FF7D007EA197 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEEF9C0E2180FF80007EA197 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEEF9C0F2180FF80007EA197 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEEF9C122180FF80007EA197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEEF9C132180FF80007EA197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEEF9C152180FF80007EA197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYB4LSU23K;
+				INFOPLIST_FILE = "SmartDabble Lite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ElbekMamajonov.SmartDabble-Lite";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEEF9C162180FF80007EA197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYB4LSU23K;
+				INFOPLIST_FILE = "SmartDabble Lite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ElbekMamajonov.SmartDabble-Lite";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEEF9BFA2180FF7D007EA197 /* Build configuration list for PBXProject "SmartDabble Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEEF9C122180FF80007EA197 /* Debug */,
+				EEEF9C132180FF80007EA197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEEF9C142180FF80007EA197 /* Build configuration list for PBXNativeTarget "SmartDabble Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEEF9C152180FF80007EA197 /* Debug */,
+				EEEF9C162180FF80007EA197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EEEF9C0A2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodel */,
+			);
+			currentVersion = EEEF9C0A2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodel */;
+			path = SmartDabble_Lite.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EEEF9BF72180FF7D007EA197 /* Project object */;
+}
