@@ -13,6 +13,7 @@
 		EEEF9C0B2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */; };
 		EEEF9C0D2180FF80007EA197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEF9C0C2180FF80007EA197 /* Assets.xcassets */; };
 		EEEF9C102180FF80007EA197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEF9C0E2180FF80007EA197 /* LaunchScreen.storyboard */; };
+		EEEF9C1921823C70007EA197 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C1821823C70007EA197 /* RunViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EEEF9C0C2180FF80007EA197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEEF9C0F2180FF80007EA197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEEF9C112180FF80007EA197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEEF9C1821823C70007EA197 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				EEEF9C172181ECFB007EA197 /* SupportingFiles */,
 				EEEF9C042180FF7D007EA197 /* ViewController.swift */,
+				EEEF9C1821823C70007EA197 /* RunViewController.swift */,
 				EEEF9C062180FF7D007EA197 /* Main.storyboard */,
 				EEEF9C112180FF80007EA197 /* Info.plist */,
 				EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */,
@@ -148,6 +151,7 @@
 			files = (
 				EEEF9C052180FF7D007EA197 /* ViewController.swift in Sources */,
 				EEEF9C0B2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld in Sources */,
+				EEEF9C1921823C70007EA197 /* RunViewController.swift in Sources */,
 				EEEF9C032180FF7D007EA197 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
