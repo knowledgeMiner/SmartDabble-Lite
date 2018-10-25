@@ -56,15 +56,23 @@
 		EEEF9C012180FF7D007EA197 /* SmartDabble Lite */ = {
 			isa = PBXGroup;
 			children = (
-				EEEF9C022180FF7D007EA197 /* AppDelegate.swift */,
+				EEEF9C172181ECFB007EA197 /* SupportingFiles */,
 				EEEF9C042180FF7D007EA197 /* ViewController.swift */,
 				EEEF9C062180FF7D007EA197 /* Main.storyboard */,
-				EEEF9C0C2180FF80007EA197 /* Assets.xcassets */,
-				EEEF9C0E2180FF80007EA197 /* LaunchScreen.storyboard */,
 				EEEF9C112180FF80007EA197 /* Info.plist */,
 				EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */,
 			);
 			path = "SmartDabble Lite";
+			sourceTree = "<group>";
+		};
+		EEEF9C172181ECFB007EA197 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF9C022180FF7D007EA197 /* AppDelegate.swift */,
+				EEEF9C0C2180FF80007EA197 /* Assets.xcassets */,
+				EEEF9C0E2180FF80007EA197 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

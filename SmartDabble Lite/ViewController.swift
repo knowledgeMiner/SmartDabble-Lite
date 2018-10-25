@@ -10,14 +10,5 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("lets get started!")
-        print("done in the branch")
-    }
-
-   
-
-
 }
 
