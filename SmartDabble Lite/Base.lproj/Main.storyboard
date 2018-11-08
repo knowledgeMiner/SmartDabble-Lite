@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="3812" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Zone-->
         <scene sceneID="Xt9-tK-XRv">
             <objects>
                 <viewController id="FWI-dP-bUz" sceneMemberID="viewController">
@@ -134,7 +134,7 @@
                                     <constraint firstAttribute="height" constant="256" id="kQe-3G-aW1"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaN-7p-JRd">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaN-7p-JRd">
                                 <rect key="frame" x="20" y="406" width="335" height="192"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
@@ -146,7 +146,7 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zone" textAlignment="natural" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="K5p-Oo-HD8">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zone" textAlignment="natural" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="K5p-Oo-HD8">
                                 <rect key="frame" x="20" y="340" width="335" height="46"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -168,6 +168,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kUu-Kw-Cq3"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Zone" id="YwI-3W-12m">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="GqG-Pm-elg"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mR-x5-Vy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
