@@ -16,6 +16,7 @@
 		EEEF9C1921823C70007EA197 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C1821823C70007EA197 /* RunViewController.swift */; };
 		EEEF9C1B218AD9D3007EA197 /* ZonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C1A218AD9D3007EA197 /* ZonesTableViewController.swift */; };
 		EEEF9C1D218AE003007EA197 /* ZoneCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C1C218AE003007EA197 /* ZoneCellTableViewCell.swift */; };
+		EEEF9C1F2194A8BA007EA197 /* ZoneEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C1E2194A8BA007EA197 /* ZoneEditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EEEF9C1821823C70007EA197 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 		EEEF9C1A218AD9D3007EA197 /* ZonesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonesTableViewController.swift; sourceTree = "<group>"; };
 		EEEF9C1C218AE003007EA197 /* ZoneCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneCellTableViewCell.swift; sourceTree = "<group>"; };
+		EEEF9C1E2194A8BA007EA197 /* ZoneEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneEditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +64,12 @@
 		EEEF9C012180FF7D007EA197 /* SmartDabble Lite */ = {
 			isa = PBXGroup;
 			children = (
-				EEEF9C1C218AE003007EA197 /* ZoneCellTableViewCell.swift */,
 				EEEF9C172181ECFB007EA197 /* SupportingFiles */,
+				EEEF9C1C218AE003007EA197 /* ZoneCellTableViewCell.swift */,
 				EEEF9C042180FF7D007EA197 /* ViewController.swift */,
 				EEEF9C1821823C70007EA197 /* RunViewController.swift */,
 				EEEF9C062180FF7D007EA197 /* Main.storyboard */,
+				EEEF9C1E2194A8BA007EA197 /* ZoneEditorViewController.swift */,
 				EEEF9C1A218AD9D3007EA197 /* ZonesTableViewController.swift */,
 				EEEF9C112180FF80007EA197 /* Info.plist */,
 				EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */,
@@ -158,6 +161,7 @@
 				EEEF9C052180FF7D007EA197 /* ViewController.swift in Sources */,
 				EEEF9C1B218AD9D3007EA197 /* ZonesTableViewController.swift in Sources */,
 				EEEF9C0B2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld in Sources */,
+				EEEF9C1F2194A8BA007EA197 /* ZoneEditorViewController.swift in Sources */,
 				EEEF9C1921823C70007EA197 /* RunViewController.swift in Sources */,
 				EEEF9C032180FF7D007EA197 /* AppDelegate.swift in Sources */,
 				EEEF9C1D218AE003007EA197 /* ZoneCellTableViewCell.swift in Sources */,

@@ -123,7 +123,7 @@
         <!--Zone-->
         <scene sceneID="Xt9-tK-XRv">
             <objects>
-                <viewController id="FWI-dP-bUz" sceneMemberID="viewController">
+                <viewController id="FWI-dP-bUz" customClass="ZoneEditorViewController" customModule="SmartDabble_Lite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1vd-I9-2zl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,9 +152,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-t6-tV1">
+                                <rect key="frame" x="138" y="142" width="100" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" image="camera"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5j7-t6-tV1" firstAttribute="centerX" secondItem="ly6-Fk-E8G" secondAttribute="centerX" id="16g-fY-cYa"/>
                             <constraint firstItem="K5p-Oo-HD8" firstAttribute="leading" secondItem="kUu-Kw-Cq3" secondAttribute="leading" constant="20" id="9Ij-al-osQ"/>
                             <constraint firstItem="kUu-Kw-Cq3" firstAttribute="bottom" secondItem="uaN-7p-JRd" secondAttribute="bottom" constant="20" id="9Qa-rN-pdw"/>
                             <constraint firstItem="ly6-Fk-E8G" firstAttribute="trailing" secondItem="kUu-Kw-Cq3" secondAttribute="trailing" id="DpU-17-Mf5"/>
@@ -162,6 +168,7 @@
                             <constraint firstItem="ly6-Fk-E8G" firstAttribute="leading" secondItem="kUu-Kw-Cq3" secondAttribute="leading" id="LKk-Y0-5On"/>
                             <constraint firstItem="kUu-Kw-Cq3" firstAttribute="trailing" secondItem="uaN-7p-JRd" secondAttribute="trailing" constant="20" id="QPT-9C-ka1"/>
                             <constraint firstItem="K5p-Oo-HD8" firstAttribute="top" secondItem="ly6-Fk-E8G" secondAttribute="bottom" constant="20" id="V12-fU-ija"/>
+                            <constraint firstItem="5j7-t6-tV1" firstAttribute="centerY" secondItem="ly6-Fk-E8G" secondAttribute="centerY" id="WxQ-RF-CKw"/>
                             <constraint firstItem="uaN-7p-JRd" firstAttribute="leading" secondItem="kUu-Kw-Cq3" secondAttribute="leading" constant="20" id="ay4-ZP-UYC"/>
                             <constraint firstItem="uaN-7p-JRd" firstAttribute="top" secondItem="K5p-Oo-HD8" secondAttribute="bottom" constant="20" id="fE2-MC-M06"/>
                             <constraint firstItem="ly6-Fk-E8G" firstAttribute="top" secondItem="kUu-Kw-Cq3" secondAttribute="top" id="waN-jz-mbI"/>
@@ -169,12 +176,22 @@
                         <viewLayoutGuide key="safeArea" id="kUu-Kw-Cq3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Zone" id="YwI-3W-12m">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="GqG-Pm-elg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="GqG-Pm-elg">
+                            <connections>
+                                <action selector="zoneEdit:" destination="FWI-dP-bUz" id="mD5-3y-EQk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="5j7-t6-tV1" id="D5f-AG-6vT"/>
+                        <outlet property="zoneDescriptionTextView" destination="uaN-7p-JRd" id="Gvb-UW-ttE"/>
+                        <outlet property="zoneImage" destination="ly6-Fk-E8G" id="XrT-kJ-wbW"/>
+                        <outlet property="zoneNameTextField" destination="K5p-Oo-HD8" id="D3j-9n-aap"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mR-x5-Vy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4736.8000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="4736.5" y="132.5"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="c1i-9f-yqo">
@@ -214,6 +231,7 @@
     </scenes>
     <resources>
         <image name="calendar" width="29" height="29"/>
+        <image name="camera" width="100" height="100"/>
         <image name="play" width="48" height="48"/>
         <image name="weather" width="29" height="29"/>
         <image name="zones" width="29" height="29"/>
