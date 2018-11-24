@@ -29,10 +29,13 @@ class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegat
         zoneDescriptionTextView.isUserInteractionEnabled = editing
         zoneNameTextField.isUserInteractionEnabled = editing
         if !editing {
-            let sector = Sector()
-            sector.createSector(zoneNameTextField.text!, zoneDescriptionTextView.text!, zoneImage.image!, in: context)
+            if zoneImage.image != nil, zoneNameTextField.text != nil, zoneDescriptionTextView.text != nil{
+                let sector = Sector()
+                sector.createSector(zoneNameTextField.text!, zoneDescriptionTextView.text!, zoneImage.image!, in: context)
+            }
         }
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         picker.dismiss(animated: true, completion: nil)
         zoneImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
