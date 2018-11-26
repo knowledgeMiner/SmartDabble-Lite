@@ -11,11 +11,21 @@ import CoreData
 
 class Sector: NSManagedObject {
     
-    func createSector(_ name: String, _ description: String, _ image: UIImage, in context: NSManagedObjectContext) {
+    func createSector(_ name: String?, _ description: String?, _ image: UIImage?, in context: NSManagedObjectContext) {
         let sector = Sector(context: context)
-        sector.name = name
-        sector.image = UIImageJPEGRepresentation(image, 1)
-        sector.descriptionOfZone = descriptionOfZone
+        if name != nil, image != nil, description != nil {
+            sector.name = name
+            sector.image = UIImageJPEGRepresentation(image!, 1)
+            sector.descriptionOfZone = descriptionOfZone
+        } else if name != nil, image != nil {
+            sector.name = name
+            sector.image = UIImageJPEGRepresentation(image!, 1)
+        } else if name != nil, description != nil {
+            sector.name = name!
+            sector.descriptionOfZone = descriptionOfZone!
+            sector.image = UIImageJPEGRepresentation(#imageLiteral(resourceName: "zones"), 1)
+        }
+        
     }
     
     

@@ -23,16 +23,18 @@ class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegat
         }
     }
     
+    // core data staff 
+    private let container = AppDelegate.persistentContainer
+    private let context = AppDelegate.viewContext
+    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         cameraButton.isHidden = !editing
         zoneDescriptionTextView.isUserInteractionEnabled = editing
         zoneNameTextField.isUserInteractionEnabled = editing
         if !editing {
-            if zoneImage.image != nil, zoneNameTextField.text != nil, zoneDescriptionTextView.text != nil{
                 let sector = Sector()
-                sector.createSector(zoneNameTextField.text!, zoneDescriptionTextView.text!, zoneImage.image!, in: context)
-            }
+                sector.createSector(zoneNameTextField.text, zoneDescriptionTextView.text, zoneImage.image, in: context)
         }
     }
     
@@ -59,11 +61,6 @@ class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegat
         zoneDescriptionTextView.delegate = self
     }
     
-    // CoreData staff
-    private let container = AppDelegate.persistentContainer
-    private let context = AppDelegate.viewContext
-    
-
     /*
     // MARK: - Navigation
 
