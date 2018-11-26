@@ -32,9 +32,9 @@ class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegat
         cameraButton.isHidden = !editing
         zoneDescriptionTextView.isUserInteractionEnabled = editing
         zoneNameTextField.isUserInteractionEnabled = editing
-        if !editing {
+        if !editing, zoneNameTextField.text != nil {
                 let sector = Sector()
-                sector.createSector(zoneNameTextField.text, zoneDescriptionTextView.text, zoneImage.image, in: context)
+                sector.createSector(zoneNameTextField.text!, zoneDescriptionTextView.text, zoneImage.image, in: context)
         }
     }
     
