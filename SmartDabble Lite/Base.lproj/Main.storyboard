@@ -83,9 +83,11 @@
                                             <rect key="frame" x="16" y="11" width="78" height="73"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="78" id="91O-Hn-v1L"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="LZK-ac-Z5z"/>
+                                                <constraint firstAttribute="height" constant="73" id="PiT-cB-WVx"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8o-xX-xAm">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8o-xX-xAm">
                                             <rect key="frame" x="102" y="25" width="257" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                             <nil key="textColor"/>
@@ -105,7 +107,7 @@
                                 <connections>
                                     <outlet property="zoneImage" destination="sob-97-gkV" id="kkb-Jd-TwN"/>
                                     <outlet property="zoneTextLabel" destination="m8o-xX-xAm" id="XNc-yr-usa"/>
-                                    <segue destination="FWI-dP-bUz" kind="show" id="MFu-um-GUN"/>
+                                    <segue destination="FWI-dP-bUz" kind="show" identifier="Zone editor mode" id="MFu-um-GUN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -129,7 +131,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ly6-Fk-E8G">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="ly6-Fk-E8G">
                                 <rect key="frame" x="0.0" y="64" width="375" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="kQe-3G-aW1"/>
@@ -153,7 +155,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-t6-tV1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-t6-tV1">
                                 <rect key="frame" x="138" y="142" width="100" height="100"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" image="camera"/>
@@ -360,6 +362,7 @@
     <resources>
         <image name="calendar" width="29" height="29"/>
         <image name="camera" width="100" height="100"/>
+        <image name="defaultImage" width="474" height="375"/>
         <image name="play" width="48" height="48"/>
         <image name="weather" width="29" height="29"/>
         <image name="zones" width="29" height="29"/>

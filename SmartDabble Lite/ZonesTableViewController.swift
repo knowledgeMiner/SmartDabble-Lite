@@ -28,7 +28,7 @@ class ZonesTableViewController: UITableViewController {
         // Configure the cell...
         if let zoneTVCell = cell as? ZoneCellTableViewCell {
             zoneTVCell.zoneTextLabel.text = sections[indexPath.row]
-            //zoneTVCell.zoneImage?.image = 
+            zoneTVCell.zoneImage?.image = #imageLiteral(resourceName: "defaultImage")
         }
 
         return cell
@@ -70,14 +70,19 @@ class ZonesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "Zone editor mode" {
+            if let zoneEditor = segue.destination as? ZoneEditorViewController {
+                //zoneEditor.zoneImage = self.
+            }
+        }
     }
-    */
+ 
 
 }

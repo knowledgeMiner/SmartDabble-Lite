@@ -12,18 +12,34 @@ import CoreData
 class Sector: NSManagedObject {
     
     func createSector(_ name: String, _ description: String?, _ image: UIImage?, in context: NSManagedObjectContext) {
-        let sector = try! find(byName: name, in: context) ?? Sector(context: context)
+        
+        do {
+            
+            if let sector = try find(byName: name, in: context) {
+                update(name, description, image, in: sector)
+            } else {
+                let sector = Sector(context: context)
+                update(name, description, image, in: sector)
+            }
+            
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    
+    private func update(_ name: String, _ description: String?, _ image: UIImage?, in sector: Sector) {
+        
         if image != nil, description != nil {
             sector.name = name
             sector.image = UIImageJPEGRepresentation(image!, 1)
-            sector.descriptionOfZone = descriptionOfZone
+            sector.descriptionOfZone = description
         } else if image != nil {
             sector.name = name
             sector.image = UIImageJPEGRepresentation(image!, 1)
         } else if description != nil {
             sector.name = name
-            sector.descriptionOfZone = descriptionOfZone!
-            sector.image = UIImageJPEGRepresentation(#imageLiteral(resourceName: "zones"), 1)
+            sector.descriptionOfZone = description
+            sector.image = UIImageJPEGRepresentation(#imageLiteral(resourceName: "defaultImage"), 1)
         }
         
     }
