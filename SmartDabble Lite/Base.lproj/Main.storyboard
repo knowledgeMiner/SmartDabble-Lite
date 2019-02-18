@@ -79,7 +79,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sob-97-gkV">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sob-97-gkV">
                                             <rect key="frame" x="16" y="11" width="78" height="73"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="78" id="91O-Hn-v1L"/>
@@ -131,7 +131,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="ly6-Fk-E8G">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="ly6-Fk-E8G">
                                 <rect key="frame" x="0.0" y="64" width="375" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="kQe-3G-aW1"/>
