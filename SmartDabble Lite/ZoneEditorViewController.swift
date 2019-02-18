@@ -9,7 +9,6 @@
 import UIKit
 
 class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
     
     @IBOutlet weak var zoneImage: UIImageView!
     
@@ -17,24 +16,58 @@ class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     @IBOutlet weak var zoneDescriptionTextView: UITextView!
 
-    @IBOutlet weak var cameraButton: UIButton!{
+    @IBOutlet weak var cameraButton: UIButton! {
         didSet {
             cameraButton.isHidden = true
         }
     }
+
+    var zoneID = 0
     
-    // core data staff 
-    private let container = AppDelegate.persistentContainer
-    private let context = AppDelegate.viewContext
+    // core data staff
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var selectedSector: Sector?
     
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
+        
         cameraButton.isHidden = !editing
         zoneDescriptionTextView.isUserInteractionEnabled = editing
         zoneNameTextField.isUserInteractionEnabled = editing
+        
         if !editing, zoneNameTextField.text != nil {
-                let sector = Sector()
-                sector.createSector(zoneNameTextField.text!, zoneDescriptionTextView.text, zoneImage.image, in: context)
+            updateZone()
+        }
+    }
+    
+    private func updateZone() {
+        if let sector = selectedSector {
+            saveSector(sector)
+            print("Updating old zone")
+        } else {
+            let sector = Sector(context: context)
+            saveSector(sector)
+            print("Creating new zone")
+        }
+    }
+    
+    private func saveSector(_ sector: Sector) {
+        sector.days = Date()
+        sector.descriptionOfZone = zoneDescriptionTextView.text
+        sector.name = zoneNameTextField.text
+        sector.uniqueID = Int16(zoneID)
+        
+        if let image = zoneImage.image {
+            guard let data = UIImagePNGRepresentation(image) else {
+                fatalError()
+            }
+            sector.image = data
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            fatalError("Could not save data: \(error)")
         }
     }
     
@@ -56,50 +89,40 @@ class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.rightBarButtonItem = editButtonItem
+        
         zoneNameTextField.delegate = self
         zoneDescriptionTextView.delegate = self
+     
+        setView()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func setView() {
+        if let sector = selectedSector {
+            zoneNameTextField.text = sector.name
+            zoneDescriptionTextView.text = sector.descriptionOfZone
+            if let data = sector.image {
+                zoneImage.image = UIImage(data: data)
+            }
+        } else {
+            zoneNameTextField.text = "Zone \(zoneID+1)"
+            zoneDescriptionTextView.text = "Description"
+        }
     }
-    */
 
 }
 
 extension ZoneEditorViewController: UITextFieldDelegate {
-    
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         return true
     }
-    /*
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        
-    }
-    
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        <#code#>
-    }*/
-    
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        let sector = Sector()
-//        sector.createSector(zoneNameTextField.text!, zoneDescriptionTextView.text!, , in: context)
-//    }
-    
 }
 
 extension ZoneEditorViewController: UITextViewDelegate {
-    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
 }
 
 

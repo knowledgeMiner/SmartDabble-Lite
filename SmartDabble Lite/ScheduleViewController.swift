@@ -9,8 +9,20 @@
 import UIKit
 
 class ScheduleViewController: UIViewController {
-
-    @IBOutlet var dayButtons: [UIButton]!
+    
+    var state: Bool = false
+    @IBOutlet var dayButtons: [UIButton]! {
+        didSet {
+            
+            for button in dayButtons {
+                button.isSelected = !state
+                if button.isSelected {
+                    button.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+//                    button.is
+                }
+            }
+        }
+    }
     @IBOutlet weak var height: NSLayoutConstraint!
     
     override func viewDidLoad() {
