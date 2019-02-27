@@ -29,9 +29,10 @@ class RunViewController: UIViewController {
     @IBAction func startAction(_ sender: Any) {
         
         if (timeText.text?.isEmpty)! {
-            let alert = UIAlertController(title: "Alert", message: "Set the watering time", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Alert", message: "Set the watering time🔝", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true)
+            return
         }
         countDownTimer.start(beginingValue: Int(timeText.text!)!*60, interval: 1)
     }
