@@ -25,7 +25,7 @@ class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegat
     var zoneID = 0
     
     // core data staff
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     var selectedSector: Sector?
     
     override func setEditing(_ editing: Bool, animated: Bool) {
@@ -45,35 +45,46 @@ class ZoneEditorViewController: UIViewController, UIImagePickerControllerDelegat
             saveSector(sector)
             print("Updating old zone")
         } else {
-            let sector = Sector(context: context)
+            let sector = Sector(context: FetchRequest.context)
             saveSector(sector)
             print("Creating new zone")
         }
     }
     
     private func saveSector(_ sector: Sector) {
-        sector.days = Date()
         sector.descriptionOfZone = zoneDescriptionTextView.text
         sector.name = zoneNameTextField.text
         sector.uniqueID = Int16(zoneID)
+        sector.daysOfweek = daysOfWeek()
         
         if let image = zoneImage.image {
-            guard let data = UIImagePNGRepresentation(image) else {
+            guard let data = image.pngData() else {
                 fatalError()
             }
             sector.image = data
         }
         
-        do {
-            try context.save()
-        } catch {
-            fatalError("Could not save data: \(error)")
-        }
+        FetchRequest.saveContext()
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    private func daysOfWeek() -> Week {
+        let week = Week(context: FetchRequest.context)
+        week.monday = false
+        week.tuesday = false
+        week.wednesday = false
+        week.thursday = false
+        week.friday = false
+        week.saturday = false
+        week.sunday = false
+        return week
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
         picker.dismiss(animated: true, completion: nil)
-        zoneImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        zoneImage.image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage
     }
     
     
@@ -130,3 +141,13 @@ extension ZoneEditorViewController: UITextViewDelegate {
 
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
+}

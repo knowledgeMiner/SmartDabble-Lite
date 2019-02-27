@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Sector" representedClassName=".Sector" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptionOfZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="daysOfweek" maxCount="1" deletionRule="Nullify" destinationEntity="Week" inverseName="parentZone" inverseEntity="Week" syncable="YES"/>
+    </entity>
+    <entity name="Week" representedClassName="Week" syncable="YES" codeGenerationType="class">
+        <attribute name="friday" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="monday" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="saturday" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sunday" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="thursday" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tuesday" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wednesday" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="parentZone" maxCount="1" deletionRule="Nullify" destinationEntity="Sector" inverseName="daysOfweek" inverseEntity="Sector" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Sector" positionX="-576" positionY="-216" width="99" height="118"/>
+        <element name="Week" positionX="-882" positionY="-261" width="128" height="163"/>
+    </elements>
+</model>

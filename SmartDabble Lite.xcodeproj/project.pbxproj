@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3F7F4AC4DE665A01034B3AF /* Pods_SmartDabble_Lite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F050737B328D35C370DC407 /* Pods_SmartDabble_Lite.framework */; };
+		EE135E31221ABD8D002DB53F /* SmartDabble_Lite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE135E2F221ABD8D002DB53F /* SmartDabble_Lite.xcdatamodeld */; };
+		EE135E35221ABEF1002DB53F /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE135E34221ABEF1002DB53F /* FetchRequest.swift */; };
 		EE16316921A5297E008FA7C9 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16316821A5297E008FA7C9 /* ScheduleViewController.swift */; };
-		EE16316D21A727C6008FA7C9 /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE16316C21A727C6008FA7C9 /* Sector.swift */; };
+		EE4F3F052222FC6A00C54BD1 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4F3F042222FC6A00C54BD1 /* WeatherViewController.swift */; };
+		EE4F3F072224159500C54BD1 /* SDL_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4F3F062224159500C54BD1 /* SDL_API.swift */; };
 		EEEF9C032180FF7D007EA197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C022180FF7D007EA197 /* AppDelegate.swift */; };
-		EEEF9C052180FF7D007EA197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C042180FF7D007EA197 /* ViewController.swift */; };
 		EEEF9C082180FF7D007EA197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEF9C062180FF7D007EA197 /* Main.storyboard */; };
-		EEEF9C0B2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */; };
 		EEEF9C0D2180FF80007EA197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEF9C0C2180FF80007EA197 /* Assets.xcassets */; };
 		EEEF9C102180FF80007EA197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEF9C0E2180FF80007EA197 /* LaunchScreen.storyboard */; };
 		EEEF9C1921823C70007EA197 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF9C1821823C70007EA197 /* RunViewController.swift */; };
@@ -22,13 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23BA95DA4EDB455F3FDB732F /* Pods-SmartDabble Lite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDabble Lite.debug.xcconfig"; path = "Target Support Files/Pods-SmartDabble Lite/Pods-SmartDabble Lite.debug.xcconfig"; sourceTree = "<group>"; };
+		9F050737B328D35C370DC407 /* Pods_SmartDabble_Lite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartDabble_Lite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE135E30221ABD8D002DB53F /* SmartDabble_Lite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartDabble_Lite.xcdatamodel; sourceTree = "<group>"; };
+		EE135E34221ABEF1002DB53F /* FetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequest.swift; sourceTree = "<group>"; };
 		EE16316821A5297E008FA7C9 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		EE16316C21A727C6008FA7C9 /* Sector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sector.swift; sourceTree = "<group>"; };
+		EE4F3F042222FC6A00C54BD1 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		EE4F3F062224159500C54BD1 /* SDL_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDL_API.swift; sourceTree = "<group>"; };
 		EEEF9BFF2180FF7D007EA197 /* SmartDabble Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartDabble Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEF9C022180FF7D007EA197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EEEF9C042180FF7D007EA197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EEEF9C072180FF7D007EA197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EEEF9C0A2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartDabble_Lite.xcdatamodel; sourceTree = "<group>"; };
 		EEEF9C0C2180FF80007EA197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEEF9C0F2180FF80007EA197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEEF9C112180FF80007EA197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		EEEF9C1A218AD9D3007EA197 /* ZonesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonesTableViewController.swift; sourceTree = "<group>"; };
 		EEEF9C1C218AE003007EA197 /* ZoneCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneCellTableViewCell.swift; sourceTree = "<group>"; };
 		EEEF9C1E2194A8BA007EA197 /* ZoneEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneEditorViewController.swift; sourceTree = "<group>"; };
+		FF860282B32B66D67B07C51F /* Pods-SmartDabble Lite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDabble Lite.release.xcconfig"; path = "Target Support Files/Pods-SmartDabble Lite/Pods-SmartDabble Lite.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F7F4AC4DE665A01034B3AF /* Pods_SmartDabble_Lite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B837349D823D125859C91AC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23BA95DA4EDB455F3FDB732F /* Pods-SmartDabble Lite.debug.xcconfig */,
+				FF860282B32B66D67B07C51F /* Pods-SmartDabble Lite.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAC516A29F77CDE4EDB34D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F050737B328D35C370DC407 /* Pods_SmartDabble_Lite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE135E32221ABD9B002DB53F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EE135E2F221ABD8D002DB53F /* SmartDabble_Lite.xcdatamodeld */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EE135E33221ABDA6002DB53F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF9C062180FF7D007EA197 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EEEF9BF62180FF7D007EA197 = {
 			isa = PBXGroup;
 			children = (
 				EEEF9C012180FF7D007EA197 /* SmartDabble Lite */,
 				EEEF9C002180FF7D007EA197 /* Products */,
+				B837349D823D125859C91AC7 /* Pods */,
+				EAC516A29F77CDE4EDB34D44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,15 +112,16 @@
 			isa = PBXGroup;
 			children = (
 				EEEF9C172181ECFB007EA197 /* SupportingFiles */,
-				EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */,
+				EE135E32221ABD9B002DB53F /* Core */,
 				EEEF9C1C218AE003007EA197 /* ZoneCellTableViewCell.swift */,
+				EE4F3F042222FC6A00C54BD1 /* WeatherViewController.swift */,
 				EEEF9C1E2194A8BA007EA197 /* ZoneEditorViewController.swift */,
+				EE4F3F062224159500C54BD1 /* SDL_API.swift */,
 				EEEF9C1A218AD9D3007EA197 /* ZonesTableViewController.swift */,
-				EEEF9C042180FF7D007EA197 /* ViewController.swift */,
 				EE16316821A5297E008FA7C9 /* ScheduleViewController.swift */,
 				EEEF9C1821823C70007EA197 /* RunViewController.swift */,
-				EE16316C21A727C6008FA7C9 /* Sector.swift */,
-				EEEF9C062180FF7D007EA197 /* Main.storyboard */,
+				EE135E34221ABEF1002DB53F /* FetchRequest.swift */,
+				EE135E33221ABDA6002DB53F /* View */,
 				EEEF9C112180FF80007EA197 /* Info.plist */,
 			);
 			path = "SmartDabble Lite";
@@ -100,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEEF9C142180FF80007EA197 /* Build configuration list for PBXNativeTarget "SmartDabble Lite" */;
 			buildPhases = (
+				C40A9BB4DD5E6792AF71B775 /* [CP] Check Pods Manifest.lock */,
 				EEEF9BFB2180FF7D007EA197 /* Sources */,
 				EEEF9BFC2180FF7D007EA197 /* Frameworks */,
 				EEEF9BFD2180FF7D007EA197 /* Resources */,
+				BDCDB25D8BC9D79AF72B76F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +171,7 @@
 				TargetAttributes = {
 					EEEF9BFE2180FF7D007EA197 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -159,20 +206,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BDCDB25D8BC9D79AF72B76F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartDabble Lite/Pods-SmartDabble Lite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KBRoundedButton/KBRoundedButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SRCountdownTimer/SRCountdownTimer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KBRoundedButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SRCountdownTimer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartDabble Lite/Pods-SmartDabble Lite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C40A9BB4DD5E6792AF71B775 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartDabble Lite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EEEF9BFB2180FF7D007EA197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEEF9C052180FF7D007EA197 /* ViewController.swift in Sources */,
+				EE135E35221ABEF1002DB53F /* FetchRequest.swift in Sources */,
+				EE4F3F052222FC6A00C54BD1 /* WeatherViewController.swift in Sources */,
 				EEEF9C1B218AD9D3007EA197 /* ZonesTableViewController.swift in Sources */,
 				EE16316921A5297E008FA7C9 /* ScheduleViewController.swift in Sources */,
-				EEEF9C0B2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld in Sources */,
+				EE135E31221ABD8D002DB53F /* SmartDabble_Lite.xcdatamodeld in Sources */,
+				EE4F3F072224159500C54BD1 /* SDL_API.swift in Sources */,
 				EEEF9C1F2194A8BA007EA197 /* ZoneEditorViewController.swift in Sources */,
 				EEEF9C1921823C70007EA197 /* RunViewController.swift in Sources */,
 				EEEF9C032180FF7D007EA197 /* AppDelegate.swift in Sources */,
 				EEEF9C1D218AE003007EA197 /* ZoneCellTableViewCell.swift in Sources */,
-				EE16316D21A727C6008FA7C9 /* Sector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +411,7 @@
 		};
 		EEEF9C152180FF80007EA197 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BA95DA4EDB455F3FDB732F /* Pods-SmartDabble Lite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -325,13 +423,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ElbekMamajonov.SmartDabble-Lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		EEEF9C162180FF80007EA197 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF860282B32B66D67B07C51F /* Pods-SmartDabble Lite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,7 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ElbekMamajonov.SmartDabble-Lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -372,12 +471,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EEEF9C092180FF7D007EA197 /* SmartDabble_Lite.xcdatamodeld */ = {
+		EE135E2F221ABD8D002DB53F /* SmartDabble_Lite.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				EEEF9C0A2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodel */,
+				EE135E30221ABD8D002DB53F /* SmartDabble_Lite.xcdatamodel */,
 			);
-			currentVersion = EEEF9C0A2180FF7D007EA197 /* SmartDabble_Lite.xcdatamodel */;
+			currentVersion = EE135E30221ABD8D002DB53F /* SmartDabble_Lite.xcdatamodel */;
 			path = SmartDabble_Lite.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

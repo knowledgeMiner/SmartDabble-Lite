@@ -13,32 +13,18 @@ class ZonesTableViewController: UITableViewController {
 
     var sectors: [Sector]?
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
     // MARK: - Table view data source
     var sections = ["Zone 1", "Zone 2", "Zone 3", "Zone 4", "Zone 5", "Zone 6", "Zone 7", "Zone 8", "Zone 9", "Zone 10"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        loadData()
-    }
-    
-    func loadData() {
-        
-        let request: NSFetchRequest<Sector> = Sector.fetchRequest()
-        
-        do {
-            sectors = try context.fetch(request)
-            print("Count: \(sectors?.count ?? 0)")
-            tableView.reloadData()
-        } catch {
-            print(error)
-        }
+        FetchRequest.loadData()
+        sectors = FetchRequest.sectors
+        tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
