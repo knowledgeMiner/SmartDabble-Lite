@@ -14,7 +14,7 @@ class RunViewController: UIViewController {
     
     @IBOutlet weak var timeText: UITextField!
     @IBOutlet weak var startButton: KBRoundedButton!
-    let alert = UIAlertController(title: "inputAlert", message: "Set the watering time", preferredStyle: .alert)
+    
     @IBOutlet weak var countDownTimer: SRCountdownTimer!
     
     override func viewDidLoad() {
@@ -23,19 +23,15 @@ class RunViewController: UIViewController {
         countDownTimer.lineColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
         countDownTimer.labelFont?.withSize(15)
         countDownTimer.useMinutesAndSecondsRepresentation = true
-        alert.addAction(UIAlertAction(title: "alertButton", style: .default, handler: nil))
        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
-    
-    @IBAction func startAction(_ sender: KBRoundedButton) {
+    @IBAction func startAction(_ sender: Any) {
         
         if (timeText.text?.isEmpty)! {
-            self.present(alert, animated: true, completion: nil)
+            let alert = UIAlertController(title: "Alert", message: "Set the watering time", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true)
         }
         countDownTimer.start(beginingValue: Int(timeText.text!)!*60, interval: 1)
     }
@@ -45,3 +41,4 @@ class RunViewController: UIViewController {
     }
     
 }
+
